@@ -4,6 +4,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/banking-project/BankingSystem/pom.xml" />
+        <option value="$PROJECT_DIR$/mongo-trial/pom.xml" />
       </list>
     </option>
   </component>
