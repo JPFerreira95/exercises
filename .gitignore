@@ -26,7 +26,7 @@ replay_pid*
 # Ignore .idea folder
 .idea
 *.idea
-ª.iml
+*.iml
 
 # Ignore .mvn folder
 *.mvn
