@@ -1,0 +1,33 @@
+This project is based from the udemy course: https://www.udemy.com/course/microservices-with-spring-boot-and-spring-cloud/learn/lecture/40879766#overview
+
+
+Imaginemos um cenário em que temos uma certa class com os seus métodos específicos:
+
+Class
+{
+    method1()
+    method2()
+}
+
+Numa aplicação, normalmente temos imensas dessas classes.
+
+Em testes unitários estamos a testar unidades específicas de código. Ou seja estamos a escrever testes para métodos específicos ou classes.
+
+imaginemos que temos
+
+Class
+{
+    method1() => calculationSquare(5) = 5*5 = 25
+    method2()
+    method3()
+}
+
+Em testes unitários o que acontece é que fazemos testes específicos para cada método em que enviamos certos parâmetros e esperamos um resultado em específico.
+calculationSquare(5) = 25
+calculationSquare(25) = 625
+
+
+Quais as vantages disto:
+ - Podemos encontrar bugs mais cedo;
+ - É mais fácil para corrigir bugs
+ - Reduz custos a longo período
