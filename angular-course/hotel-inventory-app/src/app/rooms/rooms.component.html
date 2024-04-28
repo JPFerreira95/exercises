@@ -1,0 +1,9 @@
+<h2>Welcome to {{hotelName}} </h2>
+
+<div [hidden]="hideRooms">
+    Number of Rooms:
+    <div [innerText]="numberOfRooms"></div> <!-- angular way -->
+    <!-- document.getElementById('numberOfRooms').innerText = numberOfRooms; --> <!-- javascript way -->
+
+</div>
+    <button (click)="toggle()">Toggle</button>
