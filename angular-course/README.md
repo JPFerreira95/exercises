@@ -69,3 +69,56 @@ rooms -> the name of our component\
 ### Event Binding
 
 In java script we write ```<button onClick = "functionName">``` in angular it changes to the _banana syntax_ ```<button (click)="functionName">```.
+
+### Directives
+
+* Directives are used to change the behaviour and appearance of DOM element;
+* Directives can implement all lifecycle hooks;
+* Directives can not have template;
+* They will just contain logic.
+
+
+Types of Directives:
+* Structural Directives
+* Attribute Directives
+
+
+Built in Directives;
+ - *ngIf -> hide/show a particular area for a certain case ```<div *ngIf="rooms.availableRooms > 0"> Rooms List </div>```
+ - *ngFor -> Iterate some array. ```<tr *ngFor="let room of roomList">```
+ - *ngSwitch
+ - ngClass
+ - ngStyle
+
+### Pipes
+
+Pipes are used for data transformations, but don't atually change the object.
+
+Built-in pipes:
+- DatePipe
+    ```<td> {{ room.checkinTime | date }} </td>```
+- UpperCasePipe
+- LowerCasePipe
+- CurrencyPipe
+    ```<td> {{ room.price | currency : 'INR'}} </td>```
+- DecimalPipe
+- PercentPipe
+- JsonPipe
+- SlicePipe
+- AsyncPipe
+
+For more detailed information check here: https://angular.io/api.
+
+### Lifecycle Hooks
+
+Component instance has lifecycle hooks which can help you to hook into different events on Components. Lifecycle ends when component is destroyed.
+
+- ngOnChange
+- ngOnInit
+- ngDoCheck
+- ngAfterContentInit
+- ngAfterContentChecked
+- ngAfterViewInit
+- ngAfterViewChecked
+- ngOnDestroy
+
