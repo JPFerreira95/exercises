@@ -122,3 +122,4 @@ Component instance has lifecycle hooks which can help you to hook into different
 - ngAfterViewChecked
 - ngOnDestroy
 
+
