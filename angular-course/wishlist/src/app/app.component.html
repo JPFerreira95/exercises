@@ -1,20 +1,18 @@
-<div class="container">
-  
-  <add-wish-form
-    (addWish)="items.push($event)"
-  ></add-wish-form>
-
-  <div class="row mt-3">
-    <wish-filter
-      [(filter)]="filter"
-    ></wish-filter>
-  </div>
-
-  <div class="row mt-3">
-    <div class="col-sm-4">
-      <wish-list
-      [wishes]="items.filter(filter)"
-    ></wish-list>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="">Wishlist</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" routerLink="contact">Contact</a>
+        <a class="nav-item nav-link" routerLink="first">First Component</a>
+        <a class="nav-item nav-link" routerLink="second">Second Component</a>
+        <a class="nav.item nav-link" href="#" (click)="$event.preventDefault(); goToContact()">Contact Us</a>
+        <a class="nav-item nav-link" routerLink="products">Products</a>
+      </div>
     </div>
-  </div>
-</div>
+</nav>
+
+<!-- Where routed components will be displayed -->
+<router-outlet></router-outlet>
